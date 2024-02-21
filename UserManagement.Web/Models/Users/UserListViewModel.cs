@@ -5,6 +5,7 @@ public class UserListViewModel
     public List<UserListItemViewModel> Items { get; set; } = new();
 }
 
+// recieves the list of items in an array from UsersController
 public class UserListItemViewModel
 {
     public long Id { get; set; }
