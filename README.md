@@ -1,4 +1,5 @@
-<<<<<<< HEAD
+# n_valente_inflo_techTest
+
 # User Management Technical Exercise
 
 The exercise is an ASP.NET Core web application backed by Entity Framework Core, which faciliates management of some fictional users.
@@ -56,5 +57,4 @@ Some ideas are:
 * Please feel free to change or refactor any code that has been supplied within the solution and think about clean maintainable code and architecture when extending the project.
 * If any additional packages, tools or setup are required to run your completed version, please document these thoroughly.
 =======
-# n_valente_inflo_techTest
->>>>>>> 3c0957020fad12264b8935e0da3218f99c73a277
+
