@@ -1,6 +1,6 @@
 ﻿@model UserManagement.Web.Models.Users.UserListViewModel
 
-<h2>User List</h2>
+<h2>User List check</h2>
 
 <div class="table-responsive">
     <table class="table table-striped">
@@ -32,6 +32,11 @@
                     </td>
                     <td>
                         @(item.IsActive ? "Yes" : "No")
+                    </td>
+                    <td>
+                        
+                        @* Add DateOfBirth to table *@
+                        @item.DateOfBirth.ToShortDateString() 
                     </td>
                     <td>
                         <div class="dropdown">
