@@ -3,13 +3,15 @@ using UserManagement.Models;
 
 namespace UserManagement.Services.Domain.Interfaces;
 
-public interface IUserService 
+public interface IUserService
 {
     /// <summary>
     /// Return users by active state
     /// </summary>
-    /// <param name="isActive"></param>
-    /// <returns></returns>
-    IEnumerable<User> FilterByActive(bool isActive);
-    IEnumerable<User> GetAll();
+    /// <param name = "isActive" ></ param >
+    /// < returns ></ returns >
+
+    // FilterByActive method 
+    IEnumerable <User> FilterByActive(bool isActive);
+    IEnumerable <User> GetAll();
 }

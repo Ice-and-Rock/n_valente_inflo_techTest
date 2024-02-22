@@ -16,12 +16,31 @@ Complete as many of the tasks below as you can. These are split into 3 levels of
 ### 1. Filters Section (Standard)
 
 The users page contains 3 buttons below the user listing - **Show All**, **Active Only** and **Non Active**. Show All has already been implemented. Implement the remaining buttons using the following logic:
-* Active Only – This should show only users where their `IsActive` property is set to `true`
-* Non Active – This should show only users where their `IsActive` property is set to `false`
+* Active Only – This should show only users where their `IsActive` property is set to `true` ✅
+* Non Active – This should show only users where their `IsActive` property is set to `false` ✅
+
+<Container>
+<h5>Plan</h5>
+- Locate the PageModel containing that renders the class and data
+    - using UsersController.cs (retrieves the data and sets it to the class models)
+
+- Add new Controllers for Active && NonActive
+    - using FilterByActive() in UserServices.cs
+        - Add new definition for the method to be used 
+- Add new PageViews for the new Lists: Active && NonActive
+    - use the existing template of the List (GetAll)
+- Update the buttons to filter the results of the get request (all three PageViews)
+    - asp-controller - define which controller is to be used
+        - 
+    - asp-action - define the action
+- start the development server to check the results: dotnet run
+</container>
+
+</br>
 
 ### 2. User Model Properties (Standard)
 
-Add a new property to the `User` class in the system called `DateOfBirth` which is to be used and displayed in relevant sections of the app.
+Add a new property to the `User` class in the system called `DateOfBirth` which is to be used and displayed in relevant sections of the app. ✅
 
 ### 3. Actions Section (Standard)
 
@@ -56,5 +75,5 @@ Some ideas are:
 
 * Please feel free to change or refactor any code that has been supplied within the solution and think about clean maintainable code and architecture when extending the project.
 * If any additional packages, tools or setup are required to run your completed version, please document these thoroughly.
-=======
+
 

@@ -4,6 +4,8 @@ using System.Linq;
 namespace UserManagement.Data;
 
 public interface IDataContext
+
+    /// CRUD operations
 {
     /// <summary>
     /// Get a list of items

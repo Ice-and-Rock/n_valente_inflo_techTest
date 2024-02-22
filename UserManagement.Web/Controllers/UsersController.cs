@@ -20,7 +20,8 @@ public class UsersController : Controller
             Forename = p.Forename,
             Surname = p.Surname,
             Email = p.Email,
-            IsActive = p.IsActive
+            IsActive = p.IsActive,
+            DateOfBirth = p.DateOfBirth
         });
 
         var model = new UserListViewModel
@@ -44,7 +45,8 @@ public class UsersController : Controller
             Forename = p.Forename,
             Surname = p.Surname,
             Email = p.Email,
-            IsActive = p.IsActive
+            IsActive = p.IsActive,
+            DateOfBirth = p.DateOfBirth
         });
 
         // create a new userList model and assign the ${ActiveItems} to it using ToList()
@@ -70,7 +72,8 @@ public class UsersController : Controller
             Forename = p.Forename,
             Surname = p.Surname,
             Email = p.Email,
-            IsActive = p.IsActive
+            IsActive = p.IsActive,
+            DateOfBirth = p.DateOfBirth
         });
 
         // create a new userList model and assign the £{nonActiveItems} to it using ToList()
