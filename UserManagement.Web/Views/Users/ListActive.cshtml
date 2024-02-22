@@ -11,6 +11,7 @@
                 <th>Surname</th>
                 <th>Email</th>
                 <th>Account Active</th>
+                <th>Date of Birth</th>
                 <th style="width: 1px;"></th>
             </tr>
         </thead>
@@ -35,7 +36,7 @@
                     </td>
                     <td>
                         @* Add DateOfBirth to table *@
-                        @item.DateOfBirth
+                        @item.DateOfBirth.ToShortDateString()
                     </td>
                     <td>
                         <div class="dropdown">

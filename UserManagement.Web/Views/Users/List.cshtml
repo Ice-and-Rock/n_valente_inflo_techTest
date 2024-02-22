@@ -1,6 +1,6 @@
 ﻿@model UserManagement.Web.Models.Users.UserListViewModel
 
-<h2>User List check</h2>
+<h2>User List dob datatest</h2>
 
 <div class="table-responsive">
     <table class="table table-striped">
@@ -11,6 +11,7 @@
                 <th>Surname</th>
                 <th>Email</th>
                 <th>Account Active</th>
+                <th>Date of Birth</th>
                 <th style="width: 1px;"></th>
             </tr>
         </thead>
@@ -35,7 +36,7 @@
                     </td>
                     <td>
                         
-                        @* Add DateOfBirth to table *@
+                        @* Add DateOfBirth to table and shorten to display *date-only* *@
                         @item.DateOfBirth.ToShortDateString() 
                     </td>
                     <td>
