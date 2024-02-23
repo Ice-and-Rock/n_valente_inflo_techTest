@@ -43,6 +43,8 @@ The users page contains 3 buttons below the user listing - **Show All**, **Activ
 Add a new property to the `User` class in the system called `DateOfBirth` which is to be used and displayed in relevant sections of the app. ✅
 
 <container>
+
+    **Plan**
     - Locate User class and add DateOfBirth with type DateTime
     - Update the <UserListItemViewModel> -> UserListViewModel
     - Add the new field to the viewPages (List, ActiveList, NonActiveList)
@@ -50,6 +52,7 @@ Add a new property to the `User` class in the system called `DateOfBirth` which 
         - DateOfBirth = new System.DateTime(int, int, int)
     - check the new DataCOntect is being rendered 
         Edit - Added a shortening tool for the DateTime, .ToShortStringDate()
+
 </container>
 
 ### 3. Actions Section (Standard)
@@ -58,6 +61,7 @@ Create the code and UI flows for the following actions
 * **Add** – A screen that allows you to create a new user and return to the list
 
 <container>
+
     **Plan**
     - create a UserViewModel to the data transfer betwwen views and controllers
         - similar format to UserListViewModel with same fields
@@ -66,6 +70,7 @@ Create the code and UI flows for the following actions
         - populated by the new AddUser fields from an AddUser.cshtml
     - create AddUser.cshtml
         - contains html Form type="submit" and appropriate fields matching UserViewModel
+
 </container>
 
 * **View** - A screen that displays the information about a user
