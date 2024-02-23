@@ -32,7 +32,6 @@ public class UsersController : Controller
         return View(model);
     }
 
-
     // Active List of users
     [HttpGet("active")]
     // Define the action for asp-action="" 

@@ -1,4 +1,4 @@
-# n_valente_inflo_techTest
+## n_valente_inflo_techTest
 
 # User Management Technical Exercise
 
@@ -19,21 +19,21 @@ The users page contains 3 buttons below the user listing - **Show All**, **Activ
 * Active Only – This should show only users where their `IsActive` property is set to `true` ✅
 * Non Active – This should show only users where their `IsActive` property is set to `false` ✅
 
-<Container>
-<h5>Plan</h5>
-- Locate the PageModel containing that renders the class and data
-    - using UsersController.cs (retrieves the data and sets it to the class models)
+<container>
 
-- Add new Controllers for Active && NonActive
-    - using FilterByActive() in UserServices.cs
-        - Add new definition for the method to be used 
-- Add new PageViews for the new Lists: Active && NonActive
-    - use the existing template of the List (GetAll)
-- Update the buttons to filter the results of the get request (all three PageViews)
-    - asp-controller - define which controller is to be used
-        - 
-    - asp-action - define the action
-- start the development server to check the results: dotnet run
+    **Plan**
+    - Locate the PageModel containing that renders the class and data
+        - using UsersController.cs (retrieves the data and sets it to the class models)
+
+    - Add new Controllers for Active && NonActive
+        - using FilterByActive() in UserServices.cs
+            - Add new definition for the method to be used 
+    - Add new PageViews for the new Lists: Active && NonActive
+        - use the existing template of the List (GetAll)
+    - Update the buttons to filter the results of the get request (all three PageViews)
+        - asp-controller - define which controller is to be used
+        - asp-action - define the action
+    - start the development server to check the results: dotnet run
 </container>
 
 </br>
@@ -42,10 +42,32 @@ The users page contains 3 buttons below the user listing - **Show All**, **Activ
 
 Add a new property to the `User` class in the system called `DateOfBirth` which is to be used and displayed in relevant sections of the app. ✅
 
+<container>
+    - Locate User class and add DateOfBirth with type DateTime
+    - Update the <UserListItemViewModel> -> UserListViewModel
+    - Add the new field to the viewPages (List, ActiveList, NonActiveList)
+    - update the data being seeded in DataContext
+        - DateOfBirth = new System.DateTime(int, int, int)
+    - check the new DataCOntect is being rendered 
+        Edit - Added a shortening tool for the DateTime, .ToShortStringDate()
+</container>
+
 ### 3. Actions Section (Standard)
 
 Create the code and UI flows for the following actions
 * **Add** – A screen that allows you to create a new user and return to the list
+
+<container>
+    **Plan**
+    - create a UserViewModel to the data transfer betwwen views and controllers
+        - similar format to UserListViewModel with same fields
+    - define a new public controller action (Add)
+    - write a POST request containing a UserViewModel()
+        - populated by the new AddUser fields from an AddUser.cshtml
+    - create AddUser.cshtml
+        - contains html Form type="submit" and appropriate fields matching UserViewModel
+</container>
+
 * **View** - A screen that displays the information about a user
 * **Edit** – A screen that allows you to edit a selected user from the list  
 * **Delete** – A screen that allows you to delete a selected user from the list

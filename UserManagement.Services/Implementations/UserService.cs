@@ -23,7 +23,7 @@ public class UserService : IUserService
     {
         /// Old line 
         /// throw new NotImplementedException();
-        /// retunr the logic filter
+        /// return the logic filter
         return _dataAccess.GetAll<User>().Where(eachUser => eachUser.IsActive == isActive);
 
     }

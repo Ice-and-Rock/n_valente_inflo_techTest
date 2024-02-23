@@ -15,7 +15,7 @@ public class UserListItemViewModel
     public bool IsActive { get; set; }
 
     // add DateOfBirth to the user class
-    // without the ? (which checks if there is a value) the DoB is set to 00/00/0000
+    // if there is no value the DoB resorts to 01/01/0001
     public System.DateTime DateOfBirth { get; set; }
 
 }
